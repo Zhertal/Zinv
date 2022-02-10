@@ -1,0 +1,72 @@
+<div class="row d-flex flex-column flex-shrink-0">
+  <!--++++++++++++Side Menu+++++++++++++++-->
+  <div class="flex-column bg-light side-nav" *ngIf='isLogged'>
+    <div class="m-auto">
+      <a href="/home" class="d-block link-dark text-decoration-none">
+        <img class="homepage-logo" src="./assets/icon/zinv-isologo.svg" alt="Zinv">
+      </a>
+    </div>
+    <ul class="nav flex-column nav-pills nav-fill"><!--nav-flush mb-auto text-center-->
+      <li class="nav-item">
+        <a href="/home" class="nav-link border-bottom" routerLink="home" routerLinkActive="active" aria-current="page" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <i class='bx bx-tachometer bx-sm'></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/users" class="nav-link border-bottom" routerLink="users" routerLinkActive="active" title="Usuarios" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Usuarios">
+          <i class='bx bx-user-circle bx-sm'></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/suppliers" class="nav-link border-bottom" routerLink="suppliers" routerLinkActive="active" title="Proveedores" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Proveedores">
+          <i class='bx bxs-truck bx-sm'></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/categories" class="nav-link border-bottom" routerLink="categories" routerLinkActive="active" title="Categorias" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Categorias">
+          <i class='bx bx-category bx-sm'></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/products" class="nav-link border-bottom" routerLink="products" routerLinkActive="active" title="Productos" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Productos">
+          <i class='bx bx-package bx-sm'></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/requisitions" class="nav-link border-bottom" routerLink="requisitions" routerLinkActive="active" title="Requisiciones" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Requisiciones">
+          <i class='bx bx-clipboard bx-sm'></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/arrivals" class="nav-link border-bottom" routerLink="arrivals" routerLinkActive="active" title="Entradas" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Entradas">
+          <i class='bx bx-import bx-sm'></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/leavings" class="nav-link border-bottom" routerLink="leavings" routerLinkActive="active" title="Salidas" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+          <i class='bx bx-export bx-sm'></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/reports" class="nav-link border-bottom" routerLink="reports" routerLinkActive="active" title="Reportes" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+          <i class='bx bxs-report bx-sm'></i>
+        </a>
+      </li>
+    </ul>
+    <div class="dropdown border-top">
+      <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
+      </a>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+        <li><a class="dropdown-item" href="#">New project...</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container" [ngClass]='isLogged?"col-md-10":"col-md-12"'>
+    <router-outlet></router-outlet>
+  </div>
+</div>

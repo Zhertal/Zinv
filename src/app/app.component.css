@@ -1,0 +1,26 @@
+/*----------Bootstrap overrides----------*/
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #884299;
+}
+
+.nav-link{
+  color: #884299;
+}
+
+/*----------------------------------------*/
+
+.side-nav{
+  position: absolute;
+  width: auto;
+  height: 100%;
+  padding-right: 0;
+}
+.side-nav .nav{
+  justify-content: space-between;
+}
+
+.homepage-logo{
+  width: 40px;
+}

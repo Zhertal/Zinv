@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+	--purpura1: #48005e;
+	--purpura2: #520968;
+	--purpura3: #5d1372;
+	--purpura4: #681c7c;
+	--purpura5: #732487;
+	--purpura6: #884299;
+	--purpura7: #a770b2;
+	--purpura8: #c59fcb;
+	--purpura9: #e2cee5;
+	--purpura10: #ffffff;
+}
+body{
+	background-color: var(--purpura9);
+}

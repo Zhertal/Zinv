@@ -1,0 +1,19 @@
+<div class="justify-content-center h-100">
+    <div class="loginForm">
+        <form>
+            <img class="mb-4 sm-logo" src="./assets/icon/zinv-isologo.svg" alt="Zinv">
+            <h1 class="h3 mb-3 fw-normal">Accede al sistema</h1>
+    
+            <div class="form-floating">
+                <input type="text" class="form-control" id="user" [(ngModel)]="user" name="user" autocomplete="off">
+                <label for="user">Usuario</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="pass" autocomplete="off">
+                <label for="pass">Contraseña</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary btn-submit" type="submit" (click)="login()">Entrar</button>
+            <p class="mt-5 mb-3 text-muted">Zinv © 2022</p>
+        </form>
+    </div>
+</div>
